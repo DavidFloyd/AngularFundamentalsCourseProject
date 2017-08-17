@@ -3,8 +3,10 @@
     <h1>New Event</h1>
     <form name="newEventForm">
       <fieldset>
-        <label for="eventName">Event Name:</label>
+        <label for="eventName" focus>Event Name:</label>
         <input id="eventName" required type="text" ng-model="event.name" placeholder="Name of your event..">
+        <label for="eventDate">Date:</label>
+        <input id="eventDate" type="text" date-keys required placeholder="format (mm/dd/yyyy)">
         <label for="eventLocation">Event Location:</label>
         <input id="eventLocation" required type="text" ng-model="event.location.address" placeholder="Address of event..">
         <input id="eventCity" type="text" ng-model="event.location.city" placeholder="City..">
